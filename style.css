@@ -13,6 +13,7 @@
     margin: 0;
   }
 
+/*Toutes les modifications d'écritures sont ici */
 h1 {
     font-family: var(--titlefont);
     font-size: 64px;;
@@ -22,6 +23,17 @@ h2, h3 {
     font-family: var(--h23font);
 }
 
+p, a, li {
+    font-family: var(--pfont);
+    color: white;
+    text-decoration: none;
+}
+
+#pDescription {
+    color:black;
+}
+
+/*Ici toutes les modifications au header nav (et ul) et footer*/
 header {
     background-color: var(--maincolor);
     display: flex;
@@ -38,6 +50,7 @@ nav {
     background-color: var(--maincolor);
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 15px;
 }
 
@@ -45,12 +58,21 @@ nav img {
     max-height: 5vh;
 }
 
-p, a {
-    font-family: var(--pfont);
-    color: white;
-    text-decoration: none;
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
 }
 
-#pDescription {
-    color:black;
+li {
+    margin: 5px;
 }
+
+footer {
+    background-color: var(--maincolor);
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    padding: 15px;
+}
+
