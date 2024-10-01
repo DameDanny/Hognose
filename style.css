@@ -53,7 +53,7 @@ header {
 }
 
 header img {
-    max-width: clamp(200px, 50vh, 400px);
+    max-width: clamp(150px, 40vh, 400px);
 }
 
 nav {
@@ -136,6 +136,7 @@ article {
     grid-column-start: 1;
     grid-column-end: span 3;
     justify-self: center;
+    text-align: center;
 }
 
 button {
@@ -148,4 +149,45 @@ button {
     margin-top: 10px;
     margin-bottom: 30px;
     box-shadow: 7px 9px 7px 3px rgba(0,0,0,0.78);
+}
+
+@media screen and (max-width : 760px) {
+    header {
+        flex-direction: column;
+    }
+
+    section{
+        width: 80%;
+    }
+
+    ul {
+        flex-direction: column;
+    }
+
+    li {
+        margin: 0;
+        text-align: end;
+    }
+
+    #Morph-section {
+        grid-template-columns: 1fr;
+    }
+
+    #Morphs {
+        grid-column-end: 1;
+    }
+
+    #Morph-section article img {
+        max-width: 80%;
+    }
+
+    footer p {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width : 760px) and (max-width : 900px) {
+    #Morph-section article img {
+        max-width: 80%;
+    }
 }
