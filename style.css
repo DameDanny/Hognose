@@ -29,6 +29,7 @@ h2 {
 
 h3 {
     font-size: 24px;
+    color: white;
 }
 
 p, a, li {
@@ -52,7 +53,7 @@ header {
 }
 
 header img {
-    max-height: 200px;
+    max-width: clamp(200px, 50vh, 400px);
 }
 
 nav {
@@ -104,32 +105,47 @@ section {
     margin: 25px;
 }
 
+
+/*Lié au grid et article sur les morphs de snek*/
 article {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: var(--secondarycolor);
-    height: clamp(200px, 40vh, 500px);
+    height: clamp(200px, 40vh, 250px);
     padding: 15px;
+    border-radius: 15px;
 }
 
 #Morph-section article img {
-    max-height: 250px;
+    max-height: 80%;
 }
 
 #Morph-section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
     gap: 20px;
+    width: 80%;
 
 }
 
 #Morphs {
     grid-column-start: 1;
     grid-column-end: span 3;
+    justify-self: center;
 }
 
 button {
     background-color: var(--maincolor);
+    border-radius: 15px;
+    border: var(--maincolor);
+}
+
+.seeMore {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    box-shadow: 7px 9px 7px 3px rgba(0,0,0,0.78);
 }
