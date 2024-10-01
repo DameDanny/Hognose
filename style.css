@@ -164,9 +164,18 @@ button {
 
 @media screen and (max-width : 760px) {
     header {
+        width: auto;
+        display: flex;
         flex-direction: column;
+        justify-items: baseline;
+        text-align: center;
+        align-items: center;
+        gap: 0;
+        }
+    
+    .navfloat {
+        width: 95%;
     }
-
     section{
         width: 80%;
     }
@@ -198,6 +207,13 @@ button {
 }
 
 @media screen and (min-width : 760px) and (max-width : 900px) {
+    header {
+        grid-template-columns: 1fr;
+        justify-content: baseline;
+        text-align: center;
+        align-items: center;
+    }
+
     .Morph-section article img {
         max-width: 100%;
     }
