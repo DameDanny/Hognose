@@ -15,6 +15,7 @@
 
 h1 {
     font-family: var(--titlefont);
+    font-size: 64px;;
 }
 
 h2, h3 {
@@ -24,7 +25,9 @@ h2, h3 {
 header {
     background-color: var(--maincolor);
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 15px;
 }
 
 header img {
@@ -40,4 +43,14 @@ nav {
 
 nav img {
     max-height: 5vh;
+}
+
+p, a {
+    font-family: var(--pfont);
+    color: white;
+    text-decoration: none;
+}
+
+#pDescription {
+    color:black;
 }
