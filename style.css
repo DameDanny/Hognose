@@ -2,7 +2,7 @@
 
 :root {
     --maincolor: #226222;
-    --secondarycolor: #d9d9d9;
+    --secondarycolor: #613D22;
     --titlefont: "Source Sans 3", sans-serif;
     --h23font: "Yrsa", serif;
     --pfont: "Pridi", serif;
@@ -22,12 +22,20 @@ h2, h3 {
 }
 
 header {
-    background-color: #226222;
+    background-color: var(--maincolor);
+    display: flex;
+    justify-content: space-around;
+}
+
+header img {
+    max-height: 200px;
 }
 
 nav {
+    background-color: var(--maincolor);
     display: flex;
     justify-content: space-between;
+    padding: 15px;
 }
 
 nav img {
