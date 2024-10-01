@@ -8,6 +8,11 @@
     --pfont: "Pridi", serif;
 }
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
+
 h1 {
     font-family: var(--titlefont);
 }
@@ -18,4 +23,13 @@ h2, h3 {
 
 header {
     background-color: #226222;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav img {
+    max-height: 5vh;
 }
